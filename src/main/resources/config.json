@@ -1,0 +1,9 @@
+{
+  "title": "Remote Control Server || BullTronics",
+  "port": 33986,
+  "secret": "ffffffffffffffffffffffffabcdefgh",
+  "whitelisted_hostname": [
+    "localhost"
+  ],
+  "enable_debug_logs": false
+}

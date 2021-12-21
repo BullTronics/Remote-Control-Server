@@ -1,0 +1,28 @@
+.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%); /* for IE 9 */
+    -webkit-transform: translate(-50%, -50%); /* for Safari */
+
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    min-width: 300px;
+}
+
+.align-right {
+    text-align: right;
+    padding: 5px;
+}
+
+.align-left {
+    text-align: left;
+    padding: 5px;
+}
+.dark-theme {
+    background-color: black;
+    color: white;
+}

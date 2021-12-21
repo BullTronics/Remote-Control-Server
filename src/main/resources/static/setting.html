@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>BullTronics</title>
+      <link rel="stylesheet" href="/main.css">
+   </head>
+   <body class="dark-theme">
+
+      <div id="spinner" class="center">
+         <img src="/loading.gif" alt="loading...">
+      </div>
+
+      <div id="content" hidden="" class="center">
+         <form action="#" onsubmit="storeConfig(); return false">
+            <table style="margin: 5px;">
+               <tr>
+                  <td class="align-right">
+                     Status:
+                  </td>
+                  <td class="align-left" id="status" style="color: green">
+                     Connected
+                  </td>
+               </tr>
+               <tr>
+                  <td class="align-right">
+                     Version:
+                  </td>
+                  <td class="align-left" id="version">
+                     Loading...
+                  </td>
+               </tr>
+               <tr>
+                  <td class="align-right">
+                     Hostname/IP:
+                  </td>
+                  <td class="align-left" id="hosts">
+                  </td>
+               </tr>
+               <tr>
+                  <td class="align-right">
+                     Port:
+                  </td>
+                  <td class="align-left" id="ports">
+                     <input id="port" type="text" value="" readonly disabled>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="align-right">
+                     Title:
+                  </td>
+                  <td class="align-left">
+                     <input id="title" type="text" placeholder="Title" value="">
+                  </td>
+               </tr>
+               <tr>
+                  <td class="align-right">
+                     Secret:
+                  </td>
+                  <td class="align-left">
+                     <input id="secret" type="text" placeholder="Secret" value="" maxlength="32"><br>
+                     <span id="error_message" style="font-size: smaller; display: none; color: red;">Minimimum length-8, Maximum-32</span>
+                  </td>
+               </tr>
+            </table>
+
+            <button type="submit">UPDATE</button>
+         </form><br>
+         <a href="/" style="text-decoration: none; color: lightblue;">Home</a>
+      </div>
+
+      <div id="error" hidden="" class="center">
+         <img src="/loading.gif" alt="Error">
+      </div>
+
+
+   </body>
+   <script src="/main.js"></script>
+   <script>
+      connectServer();
+   </script>
+</html>

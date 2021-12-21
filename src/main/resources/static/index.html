@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>BullTronics</title>
+      <link rel="stylesheet" href="/main.css">
+   </head>
+   <body class="dark-theme">
+      <div id="spinner" class="center">
+         <img src="/loading.gif" alt="loading...">
+      </div>
+
+      <div id="content" hidden="" class="center">
+            <h3 id="title">Remote Control Server</h3>
+               <table style="margin: 5px; width: 100%;">
+                  <tr>
+                     <td class="align-right">
+                        Status:
+                     </td>
+                     <td class="align-left" id="status" style="color: green">
+                        Connected
+                     </td>
+                  </tr>
+                  <tr>
+                     <td class="align-right">
+                        Version:
+                     </td>
+                     <td class="align-left" id="version">
+                        Loading...
+                     </td>
+                  </tr>
+               </table>
+            <br>
+            <a href="/setting.html" style="text-decoration: none; color: lightblue;">Config Server</a>
+         </div>
+      </body>
+
+      <div id="error" hidden="" class="center">
+         <img src="/loading.gif" alt="Error">
+      </div>
+
+   <script src="/main.js"></script>
+   <script>
+      connectServer();
+   </script>
+</html>
