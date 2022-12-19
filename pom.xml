@@ -47,4 +47,11 @@
 		</plugins>
 	</build>
 
+	<distributionManagement>
+		<repository>
+			<id>github</id>
+			<name>bulltronics</name>
+			<url>https://maven.pkg.github.com/BullTronics/Remote-Control-Server</url>
+		</repository>
+	</distributionManagement>
 </project>
